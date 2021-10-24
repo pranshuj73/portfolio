@@ -31,3 +31,7 @@ h3 { @apply lg:text-3xl text-xl }
 h4 { @apply text-xl }
 h5 { @apply text-lg }
 h6 { @apply text-sm }
+
+.sub-text {
+  @apply text-gray-700 dark:text-gray-400
+}
