@@ -4,6 +4,23 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+  @apply min-h-screen;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-secondary;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid;
+  @apply bg-yellow-200 border-secondary;
 }
 
 a {
@@ -14,24 +31,40 @@ a {
 
 * {
   box-sizing: border-box;
+  @apply text-primary dark:text-white;
 }
 
-* {
-  @apply dark:bg-primary bg-white text-primary dark:text-white
+main, article {
+  @apply dark:bg-primary bg-white;
 }
 
-body {
-  @apply min-h-screen
-}
-
-
-h1 { @apply lg:text-7xl text-5xl }
-h2 { @apply lg:text-5xl text-3xl }
-h3 { @apply lg:text-3xl text-xl }
-h4 { @apply text-xl }
-h5 { @apply text-lg }
-h6 { @apply text-sm }
+h1 { @apply lg:text-7xl text-5xl; }
+h2 { @apply lg:text-4xl text-2xl; }
+h3 { @apply text-3xl; }
+h4 { @apply text-xl; }
+h5 { @apply text-lg; }
+h6 { @apply text-sm; }
 
 .sub-text {
-  @apply text-gray-700 dark:text-gray-400
+  @apply text-gray-700 dark:text-gray-400;
+}
+
+.card {
+  @apply bg-gray-300 dark:bg-secondary p-10 rounded-lg m-5 shadow-lg hover:shadow-xl transition-shadow duration-200 ease-in-out min-h-[400px];
+}
+
+.pill {
+  @apply p-1 px-5 rounded-full bg-primary dark:bg-white text-white dark:text-primary font-semibold flex flex-row items-center justify-center;
+}
+
+.pill-icon {
+  fill: #FFFBFE!important;
+  margin-right: 5px;
+  @apply hidden sm:block
+}
+
+body.dark .pill-icon {
+  fill: #201D2F!important;
+  margin-right: 5px;
+  @apply hidden sm:block
 }
