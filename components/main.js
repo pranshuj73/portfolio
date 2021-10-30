@@ -25,7 +25,7 @@ export default function Main() {
           <Image alt="Pranshu Jha" src={pfp} layout="responsive" />
         </div>
       </section>
-      <i className={showIndicator ? 'absolute bottom-7 animate-bounce' : 'hidden'}><BsCaretDownFill size="1.75em" /></i>
+      <i className={showIndicator ? 'absolute bottom-7 left-1/2 -m-3.5 animate-bounce' : 'hidden'}><BsCaretDownFill size="1.75em" /></i>
     </main>
   )
 }
