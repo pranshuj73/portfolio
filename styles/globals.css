@@ -66,5 +66,11 @@ h6 { @apply lg:text-sm text-xs; }
 body.dark .pill-icon {
   fill: #201D2F!important;
   margin-right: 5px;
-  @apply hidden sm:block
+  @apply hidden sm:block;
+}
+
+/* fullpage slide indicator */
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  @apply bg-primary dark:bg-white;
 }

@@ -5,7 +5,7 @@ import { SiDjango, SiFlask, SiLinux, SiCplusplus } from 'react-icons/si';
 
 export default function About() {
   return (
-    <article className="pt-14 flex flex-col md:flex-row md:items-center justify-center min-h-screen" id="about">
+    <article className="pt-14 md:mx-8 flex flex-col md:flex-row md:items-center justify-center min-h-screen" id="about">
       <section className="card md:w-1/2 flex flex-col justify-center">
         <h2 className="mb-4">About Me</h2>
         <p className="lg:text-lg">
