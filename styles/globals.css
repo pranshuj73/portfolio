@@ -72,5 +72,5 @@ body.dark .pill-icon {
 /* fullpage slide indicator */
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  @apply bg-primary dark:bg-white;
+  @apply bg-primary dark:bg-white hidden md:block;
 }
