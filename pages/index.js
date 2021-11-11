@@ -1,4 +1,6 @@
 import Head from 'next/head';
+
+// COMPONENTS
 import Navbar from '../components/navbar';
 import Main from '../components/main';
 import About from '../components/about';
