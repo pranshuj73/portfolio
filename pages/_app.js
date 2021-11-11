@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 // ANALYTICS
-import * as ga from '../lib/ga';
+import * as ga from '../lib/analytics';
 
 // STYLES
 import '../styles/tailwind.css';
