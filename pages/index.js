@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Pranshu Jha</title>
         <meta name="description" content="Pranshu Jha's Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Navbar />
