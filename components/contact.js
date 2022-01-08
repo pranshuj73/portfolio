@@ -1,4 +1,5 @@
 import { IoMail, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
+import { SiHashnode} from 'react-icons/si';
 
 export default function Contact() {
   return (
@@ -14,6 +15,7 @@ export default function Contact() {
             <a className="pill m-2" href="https://twitter.com/pranshuj73" target="_blank" rel="noopener noreferrer"><IoLogoTwitter className="pill-icon" size='1.5em'/>Twitter</a>
           </div>
         </div>
+        <a className="pill m-2" href="https://pranshu.codes/" target="_blank" rel="noopener noreferrer"><SiHashnode className="pill-icon" size='1.5em'/>My Blog</a>
       </section>
     </section>
   )
