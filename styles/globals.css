@@ -34,10 +34,6 @@ a {
   @apply text-primary dark:text-white;
 }
 
-main, article {
-  @apply dark:bg-primary bg-white;
-}
-
 h1 { @apply lg:text-7xl text-5xl; }
 h2 { @apply lg:text-4xl text-2xl; }
 h3 { @apply lg:text-3xl text-xl; }
@@ -50,11 +46,11 @@ h6 { @apply lg:text-sm text-xs; }
 }
 
 .card {
-  @apply bg-gray-300 dark:bg-secondary p-10 rounded-lg m-5 shadow-lg hover:shadow-xl transition-shadow duration-200 ease-in-out min-h-[400px] md:h-[80vh] lg:h-[60vh];
+  @apply bg-gray-100 dark:bg-secondary rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 ease-in-out;
 }
 
 .pill {
-  @apply p-1 px-5 rounded-full bg-primary dark:bg-white text-white dark:text-primary font-semibold flex flex-row items-center justify-center;
+  @apply p-2 px-5 rounded-full bg-primary dark:bg-white text-white dark:text-primary font-semibold flex flex-row items-center justify-center;
 }
 
 .pill-icon {
@@ -64,13 +60,35 @@ h6 { @apply lg:text-sm text-xs; }
 }
 
 body.dark .pill-icon {
-  fill: #201D2F!important;
+  fill: #333333!important;
   margin-right: 5px;
   @apply hidden sm:block;
 }
 
-/* fullpage slide indicator */
+.dark-section {
+  position: relative;
+  @apply bg-gray-300 dark:bg-tertiary
+}
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-  @apply bg-primary dark:bg-white hidden md:block;
+.dark-section .card {
+  @apply bg-gray-300 dark:bg-secondary
+}
+
+.dark-section * {
+  z-index: 1;
+}
+
+.dark-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 100%, 0 5%);
+  @apply bg-gray-100 dark:bg-primary;
+}
+
+.cut-out {
+  clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 100%, 0 5%);
 }

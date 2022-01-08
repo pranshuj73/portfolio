@@ -4,10 +4,12 @@ import Head from 'next/head';
 import Navbar from '../components/navbar';
 import Main from '../components/main';
 import About from '../components/about';
+// import Projects from '../components/projects';
+import Contact from '../components/contact';
 
 export default function Home() {
   return (
-    <main>
+    <main className="dark:bg-primary bg-gray-100">
       <Head>
         <title>Pranshu Jha</title>
         <meta name="description" content="Pranshu Jha's Portfolio" />
@@ -17,6 +19,8 @@ export default function Home() {
       <Navbar />
       <Main />
       <About />
+      {/* <Projects /> */}
+      <Contact />
 
     </main>
   )
