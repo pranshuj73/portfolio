@@ -85,10 +85,10 @@ body.dark .pill-icon {
   bottom: 0;
   left: 0;
   right: 0;
-  clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 100%, 0 5%);
+  clip-path: polygon(50% 0%, 100% 0%, 100% calc(100% - 50px), 50% 100%, 0% 100%, 0% calc(0% + 50px));
   @apply bg-gray-100 dark:bg-primary;
 }
 
 .cut-out {
-  clip-path: polygon(50% 0, 100% 0, 100% 95%, 50% 100%, 0 100%, 0 5%);
+  clip-path: polygon(50% 0%, 100% 0%, 100% calc(100% - 50px), 50% 100%, 0% 100%, 0% calc(0% + 50px));
 }
