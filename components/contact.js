@@ -12,7 +12,7 @@ export default function Contact() {
           <a aria-label="GitHub" className="pill m-2 col-span-2" href="https://github.com/pranshuj73" target="_blank" rel="noopener noreferrer"><IoLogoGithub className="pill-icon" size='1.5em'/>GitHub</a>
           <a aria-label="LinkedIn" className="pill m-2 col-span-2" href="https://www.linkedin.com/in/pranshuj73/" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin className="pill-icon" size='1.5em'/>LinkedIn</a>
           <a aria-label="Twitter" className="pill m-2 col-span-2" href="https://twitter.com/pranshuj73" target="_blank" rel="noopener noreferrer"><IoLogoTwitter className="pill-icon" size='1.5em'/>Twitter</a>
-          <a aria-label="My Blog" className="pill m-2 col-span-2 col-start-2 whitespace-nowrap" href="https://pranshu.codes/" target="_blank" rel="noopener noreferrer"><SiHashnode className="pill-icon" size='1.5em'/>My Blog</a>
+          <a aria-label="My Blog" className="pill m-2 col-span-2 col-start-2 whitespace-nowrap" href="https://blog.pranshu.codes/" target="_blank" rel="noopener noreferrer"><SiHashnode className="pill-icon" size='1.5em'/>My Blog</a>
         </div>
       </div>
     </section>
