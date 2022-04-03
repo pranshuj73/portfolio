@@ -18,7 +18,7 @@ const ToggleDarkMode = () => {
   const handleMode = () => setDarkTheme(!darkTheme);
 
   return (
-    <button className="ml-auto sm:mx-4" onClick={handleMode}>
+    <button aria-label={`Toggle ${darkTheme ? 'Light' : 'Dark'} Mode`} className="ml-auto sm:mx-4" onClick={handleMode}>
       { darkTheme ? <IoSunny size="1.3em" /> :  <IoMoon size="1.3em" /> }
     </button>
   )

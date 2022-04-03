@@ -4,9 +4,10 @@ import { FaDatabase } from 'react-icons/fa';
 import { SiDjango, SiFlask, SiLinux, SiCplusplus } from 'react-icons/si';
 
 export default function About() {
+  const sectionClasses = "card min-h-[400px] lg:h-[60vh] p-10 m-5 md:w-full flex flex-col justify-center"
   return (
-    <section className="pt-14 py-10 bg-gray-300 dark:bg-tertiary md:px-8 flex flex-col md:flex-row md:items-center justify-center min-h-screen cut-out" id="about">
-      <section className="card min-h-[400px] md:h-[80vh] lg:h-[60vh] p-10 m-5 md:w-1/2 flex flex-col justify-center items-center">
+    <section className="py-24 bg-gray-300 dark:bg-tertiary md:px-8 flex flex-col lg:flex-row md:items-center justify-center min-h-screen cut-out" id="about">
+      <section className={`${sectionClasses} items-center`}>
         <h2 className="mb-6 text-center">About Me</h2>
         <div className="lg:text-lg text-justify lg:px-8">
           <p className="mb-2">Hi 👋, My name is Pranshu Jha,</p>
@@ -15,7 +16,7 @@ export default function About() {
           <p>Currently pursuing Bachelors in Computer Science & Engineering at RIT Chennai, IN 🇮🇳</p>
         </div>
       </section>
-      <section className="card min-h-[400px] md:h-[80vh] lg:h-[60vh] p-10 m-5 md:w-1/2 flex flex-col justify-center">
+      <section className={sectionClasses}>
         <h2 className="mb-8 text-center">Skills & Technologies</h2>
         <Technologies />
       </section>
