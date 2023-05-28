@@ -27,13 +27,13 @@ export default function ContactForm() {
       </div>
       <h1 className="text-2xl text-white text-center">you can reach out to me at my socials.</h1>
       <div className="flex flex-row flex-wrap items-center justify-center mt-6">
-        <Social name="twitter" colorClass="text-blue-400">
+        <Social name="twitter" colorClass="text-blue-400" link="https://twitter.com/pranshuj73">
           <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
         </Social>
-        <Social name="e-mail" colorClass="text-green-400">
+        <Social name="e-mail" colorClass="text-green-400" link="mailto:pranshuj9801@gmail.com">
           <circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
         </Social>
-        <Social name="schedule a call" colorClass="text-yellow-300">
+        <Social name="schedule a call" colorClass="text-yellow-300" link="https://cal.com/pranshujha">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
         </Social>
       </div>
