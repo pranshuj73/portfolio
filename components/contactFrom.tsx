@@ -9,11 +9,11 @@ type SocialProps = {
 
 function Social(props: PropsWithChildren<SocialProps>) {
   return (
-    <a href={props.link} target="_blank" rel="noreferrer noopener" className={`flex flex-row items-center justify-center ${props.colorClass} m-3 justify-self-center opacity-75 hover:opacity-100 transition-all duration-300 ease-in cursor-pointer`}>
+    <a href={props.link} target="_blank" rel="noreferrer noopener" className={`flex flex-row items-center justify-center ${props.colorClass} mx-5 my-3 justify-self-center opacity-75 hover:opacity-100 transition-all duration-300 ease-in cursor-pointer`}>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mr-1">
         {props.children}
       </svg>
-      <p className="text-lg text-gray-400 hover:text-gray-200 transition-all duration-300 ease-in">{props.name}</p>
+      <p className="text-lg text-gray-300 hover:text-gray-200 transition-all duration-300 ease-in">{props.name}</p>
     </a>
   )
 }

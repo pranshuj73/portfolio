@@ -12,7 +12,7 @@ export default function Introduction() {
           <div className="flex flex-col sm:flex-row items-center justify-center mt-10">
             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
               <div className="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-white">
-                <Image src="/pfp.jpg" alt="Pranshu Jha" width={300} height={300} className="rounded-full" />
+                <Image src={"/pfp.jpg"} blurDataURL={"/pfp.jpg"} alt="Pranshu Jha" width={300} height={300} className="rounded-full" priority={true} placeholder="blur" />
               </div>
               <div className="flex flex-col items-center text-center justify-center">
                 <h2 className="font-medium title-font mt-4 text-white text-lg">Pranshu Jha</h2>
