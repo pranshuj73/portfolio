@@ -3,12 +3,12 @@ import Image from "next/image"
 export default function Introduction() {
   return (
     <section className="text-gray-400 body-font">
-      <div className="lg:w-4/6  px-10 py-24 mx-auto">
+      <div className="container px-10 py-24 mx-auto">
         <div className="flex flex-col mb-10">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">about me.</h1>
           <div className="h-1 w-20 bg-gray-500 rounded" />
         </div>
-        <div className="mx-auto">
+        <div className="lg:w-4/6 mx-auto">
           <div className="flex flex-col sm:flex-row items-center justify-center mt-10">
             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
               <div className="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-white">
