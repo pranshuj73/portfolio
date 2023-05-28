@@ -4,7 +4,7 @@ import Introduction from "@/components/introduction";
 
 export default function About() {
   return (
-    <main className="flex screen-height flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
       <Introduction />
       <Footer />

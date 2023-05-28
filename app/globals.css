@@ -17,8 +17,3 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(109.6deg, rgb(26, 33, 39) 11.2%, rgb(4, 14, 26) 51.2%, rgb(0, 0, 0) 98.6%);
 }
-
-.screen-height {
-  min-height: 100vh;
-  min-height: 100dvh;
-}

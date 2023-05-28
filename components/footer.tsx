@@ -1,5 +1,5 @@
 export default function Footer() {
-  const linkStyle = 'mr-5 text-gray-400 hover:text-gray-200 transition-all duration-300 ease-in cursor-pointer'
+  const linkStyle = 'mx-2 text-gray-400 hover:text-gray-200 transition-all duration-300 ease-in cursor-pointer'
   
   return (
     <footer className="body-font w-full flex flex-wrap p-5 flex-row items-center justify-center md:justify-end">
