@@ -13,7 +13,7 @@ function Social(props: PropsWithChildren<SocialProps>) {
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mr-1">
         {props.children}
       </svg>
-      <p className="text-lg text-gray-300 hover:text-gray-200 transition-all duration-300 ease-in">{props.name}</p>
+      <p className="text-gray-300 hover:text-gray-200 transition-all duration-300 ease-in">{props.name}</p>
     </a>
   )
 }
