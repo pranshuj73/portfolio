@@ -28,18 +28,18 @@ export default function Landing() {
         variants={container}
         initial="hidden"
         animate="visible"
-        className='text-6xl md:text-8xl font-semibold uppercase leading-tight'
+        className='text-6xl md:text-8xl font-semibold uppercase'
       >
-        <motion.span variants={child} className="inline-block mr-6">Hey! </motion.span>
-        <motion.span variants={child} className="inline-block mr-6">I'm </motion.span>
-        <motion.span variants={child} className="inline-block">Pranshu</motion.span>
-        <motion.span variants={child} className="inline-block">,</motion.span>
-        <br/>
-        <motion.span variants={child} className="inline-block mr-6">a </motion.span>
-        <motion.span variants={child} className="inline-block">Full</motion.span>
-        <motion.span variants={child} className="inline-block">-</motion.span>
-        <motion.span variants={child} className="inline-block mr-6">Stack </motion.span>
-        <motion.span variants={child} className="inline-block">Developer</motion.span>
+        <motion.span variants={child} className="inline-block my-[0.66rem] mr-6">Hey! </motion.span>
+        <motion.span variants={child} className="inline-block my-[0.66rem] mr-6">I'm </motion.span>
+        <motion.span variants={child} className="inline-block my-[0.66rem]">Pranshu</motion.span>
+        <motion.span variants={child} className="inline-block my-[0.66rem]">,</motion.span>
+        <br />
+        <motion.span variants={child} className="inline-block my-[0.66rem] mr-6">a </motion.span>
+        <motion.span variants={child} className="inline-block my-[0.66rem]">Full</motion.span>
+        <motion.span variants={child} className="inline-block my-[0.66rem]">-</motion.span>
+        <motion.span variants={child} className="inline-block my-[0.66rem] mr-6">Stack </motion.span>
+        <motion.span variants={child} className="inline-block my-[0.66rem]">Developer</motion.span>
       </motion.div>
 
       <motion.svg
