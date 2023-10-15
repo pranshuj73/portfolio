@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.about-bg {
+  background-image: url("/about.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 40% auto;
+  background-repeat: no-repeat;
+}

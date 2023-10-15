@@ -1,5 +1,6 @@
 "use client";
 
+import Section from '@/components/Section';
 import { motion } from 'framer-motion'
 
 export default function Landing() {
@@ -23,33 +24,36 @@ export default function Landing() {
   };
 
   return (
-    <section className='min-h-screen w-full flex flex-col items-center justify-center relative p-10'>
+    <Section>
       <motion.div
         variants={container}
         initial="hidden"
         animate="visible"
         className='text-6xl md:text-8xl font-semibold uppercase'
       >
-        <motion.span variants={child} className="inline-block my-[0.66rem] mr-6">Hey! </motion.span>
-        <motion.span variants={child} className="inline-block my-[0.66rem] mr-6">I'm </motion.span>
-        <motion.span variants={child} className="inline-block my-[0.66rem]">Pranshu</motion.span>
-        <motion.span variants={child} className="inline-block my-[0.66rem]">,</motion.span>
-        <br />
-        <motion.span variants={child} className="inline-block my-[0.66rem] mr-6">a </motion.span>
-        <motion.span variants={child} className="inline-block my-[0.66rem]">Full</motion.span>
-        <motion.span variants={child} className="inline-block my-[0.66rem]">-</motion.span>
-        <motion.span variants={child} className="inline-block my-[0.66rem] mr-6">Stack </motion.span>
-        <motion.span variants={child} className="inline-block my-[0.66rem]">Developer</motion.span>
+        <p>
+          <motion.span variants={child} className="inline-block mr-6">Hey! </motion.span>
+          <motion.span variants={child} className="inline-block mr-6">I'm </motion.span>
+          <motion.span variants={child} className="inline-block">Pranshu</motion.span>
+          <motion.span variants={child} className="inline-block">,</motion.span>
+        </p>
+        <p>
+          <motion.span variants={child} className="inline-block mr-6">a </motion.span>
+          <motion.span variants={child} className="inline-block">Full</motion.span>
+          <motion.span variants={child} className="inline-block">-</motion.span>
+          <motion.span variants={child} className="inline-block mr-6">Stack </motion.span>
+          <motion.span variants={child} className="inline-block">Developer</motion.span>
+        </p>
       </motion.div>
 
       <motion.svg
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
         className="absolute bottom-20 animate-bounce w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#000"
       >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
       </motion.svg>
-    </section>
+    </Section>
   )
 }
