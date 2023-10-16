@@ -1,6 +1,7 @@
 import Section from "@/components/Section";
 import { Button } from "@nextui-org/button";
-import { Image } from "@nextui-org/image";
+// import { Image } from "@nextui-org/image";
+import Image from "next/image";
 import { Link } from "@nextui-org/link";
 
 
@@ -11,13 +12,12 @@ const Project = ({id, title, description, tags}: projectData) => {
     <div key={id.toString()} className="flex flex-col my-6">
       <div className="w-full h-auto relative">
         <Image
-          removeWrapper
-          isBlurred
+          width={600}
+          height={400}
           alt={title}
-          shadow="sm"
-          radius="lg"
-          width="100%"
-          className="w-full object-cover h-auto"
+          placeholder="blur"
+          blurDataURL={`/projects/${id}.jpg`}
+          className="w-full object-cover h-auto rounded-2xl shadow-md border-1 border-black/10"
           src={`/projects/${id}.jpg`}
         />
         <Link as={Button} className="absolute bottom-3 right-3 z-10 font-medium px-4" size="sm" radius="lg" variant="faded" isBlock isExternal showAnchorIcon>Link</Link>
@@ -26,7 +26,7 @@ const Project = ({id, title, description, tags}: projectData) => {
         <h4 className="text-text font-medium text-2xl my-1">{title}</h4>
         <p className="text-sm text-text/40 uppercase font-bold my-1">{tags}</p>
       </div>
-      <p className="text-text/70 md:text-sm">{description}</p>
+      <p className="text-text/70 sm:text-sm md:text-base">{description}</p>
     </div>
   )
 }
