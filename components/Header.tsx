@@ -20,14 +20,14 @@ export default function Header() {
           <NavbarBrand className="text-lg lg:hidden">PJ</NavbarBrand>
           <NavbarContent className="lg:data-[justify=start]:justify-start data-[justify=start]:justify-end data-[justify=start]:flex-grow data-[justify=start]:basis-0">
             <NavbarItem className="mr-12 hidden lg:block"> <Link className="text-lg" color="foreground" href="#">Pranshu Jha</Link> </NavbarItem>
-            <NavbarItem> <Link color="foreground" underline="hover" href="#about">About</Link> </NavbarItem>
-            <NavbarItem> <Link color="foreground" underline="hover" href="#projects">Projects</Link> </NavbarItem>
-            <NavbarItem> <Link color="foreground" underline="hover" href="#contact">Contact</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" underline="hover" href="#about">About</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" underline="hover" href="#projects">Projects</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" underline="hover" href="#contact">Contact</Link> </NavbarItem>
           </NavbarContent>
           
         <NavbarContent className="hidden lg:flex" justify="end">
           <NavbarItem className="flex items-center justify-center">
-            <h2>Let's Connect</h2>
+            <h2 className="text-text/70">Let's Connect</h2>
             <Tooltip isOpen={isOpen} onOpenChange={(open) => setIsOpen(open)} defaultOpen={false} isDisabled={!isOpen} placement="bottom" content="Email Copied!" color="foreground">
               <Button className="bg-white ml-6" variant="ghost" endContent={<CopyIcon/>} onPress={() => {navigator.clipboard.writeText("hello@pranshujha.com"); setIsOpen(true)}}>
                 hello@pranshujha.com

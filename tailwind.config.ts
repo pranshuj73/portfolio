@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const {nextui} = require("@nextui-org/react");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config: Config = {
   content: [
@@ -12,6 +13,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '360px',
+        ...defaultTheme.screens,
+      },
       fontSize: {
         sm: '0.750rem',
         base: '1rem',

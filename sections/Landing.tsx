@@ -29,7 +29,7 @@ export default function Landing() {
         variants={container}
         initial="hidden"
         animate="visible"
-        className='text-6xl md:text-8xl font-semibold uppercase'
+        className='text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold uppercase'
       >
         <p>
           <motion.span variants={child} className="inline-block mr-6">Hey! </motion.span>
