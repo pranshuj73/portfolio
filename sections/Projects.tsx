@@ -2,7 +2,6 @@ import Section from "@/components/Section";
 import { Card, CardHeader, CardFooter, CardBody } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
 import { Image } from "@nextui-org/image";
-import DrawTitle from "@/components/DrawTitle";
 
 
 interface projectData{id: number, title: string, description: string, tags: string};
@@ -37,21 +36,15 @@ const Project = ({id, title, description, tags}: projectData) => {
 export default function Projects() {
   const data: projectData[] = [
     {
-      id: 1,
-      tags: "NextJS",
-      title: "Dystopian",
+      id: 1, tags: "NextJS", title: "Dystopian",
       description: "Dystopian is a gamified learning platform that allows students to learn programming easily through bite-sized lessons built into the plot of the game. Students can also compete with each other in the leaderboard."
     },
     { 
-      id: 2,
-      tags: "Blockchain",
-      title: "XDC Health",
+      id: 2, tags: "Blockchain", title: "XDC Health",
       description: "Built for PLI Blockathon '22, XDC Health is an Electronic Healthcare Management System built upon XDC Blockchain allowing healthcare recorrds to be stored on the blockchain."
     },
     {
-      id: 3,
-      tags: "NextJS, TailwindCSS",
-      title: "Tranquil",
+      id: 3, tags: "NextJS, TailwindCSS", title: "Tranquil",
       description: "Tranquil is a collection of aesthetic TailwindCSS components which can be edited on the web as per need using AI. It is currently under development."
     }
   ]
