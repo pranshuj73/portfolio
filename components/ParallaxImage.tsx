@@ -8,7 +8,7 @@ export default function ParallaxImage() {
 
   const imageRef = useRef(null);
   useEffect(() => {
-    new simpleParallax(imageRef.current, {
+    new simpleParallax(imageRef.current!, {
       scale: 1.2,
       delay: 0.6,
       transition: 'cubic-bezier(0.17, 0.87, 1, 1)'

@@ -1,7 +1,9 @@
-import ParallaxImage from "@/components/ParallaxImage"
+import dynamic from "next/dynamic"
 
 
 export default function About() {
+  const ParallaxImage = dynamic(() => import("@/components/ParallaxImage"), { ssr: false })
+
   return (
     <section className='min-h-screen max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 gap-12 p-10'>
       <ParallaxImage />
