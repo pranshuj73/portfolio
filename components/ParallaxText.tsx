@@ -22,10 +22,10 @@ function Parallax({ children, baseVelocity = 100 }: ParallaxProps) {
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
-    damping: 100,
-    stiffness: 500
+    damping: 50,
+    stiffness: 400
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 10], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
     clamp: false
   });
 
@@ -34,9 +34,7 @@ function Parallax({ children, baseVelocity = 100 }: ParallaxProps) {
    * have to replace for wrapping that works for you or dynamically
    * calculate
    */
-  const x = useTransform(baseX, (v) => `${wrap(0, -125, v)}%`);
-
-
+  const x = useTransform(baseX, (v) => `${wrap(0, -25, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
@@ -65,21 +63,22 @@ function Parallax({ children, baseVelocity = 100 }: ParallaxProps) {
    * dynamically generated number of children.
    */
   return (
-      <motion.div className="mx-3 opacity-60 text-2xl w-full flex flex-nowrap whitespace-nowrap transition-all ease-soft-spring duration-1000" style={{ x }}>
-        <span className="mx-1">{children}</span>
-        <span className="mx-1">{children}</span>
-        <span className="mx-1">{children}</span>
-        <span className="mx-1">{children}</span>
-        <span className="mx-1">{children}</span>
+    <div className="opacity-60 overflow-hidden m-0 whitespace-nowrap flex flex-nowrap">
+      <motion.div className="sm:text-lg md:text-xl lg:text-2xl md:my-1 lg:my-2 whitespace-nowrap flex flex-nowrap" style={{ x }}>
+        <span className="block mr-3">{children} </span>
+        <span className="block mr-3">{children} </span>
+        <span className="block mr-3">{children} </span>
+        <span className="block mr-3">{children} </span>
       </motion.div>
+    </div>
   );
 }
 
 export default function ParallaxText() {
   return (
-    <div className="overflow-hidden w-full my-16">
-      <Parallax baseVelocity={-5}>Full-Stack Developer ● Web3 Enthusiast ● Building In Public ●</Parallax>
-      <Parallax baseVelocity={5}>Full-Stack Developer ● Web3 Enthusiast ● Building In Public ●</Parallax>
-    </div>
-  )
-};
+    <section className="my-16 overflow-hidden w-full">
+      <Parallax baseVelocity={-5}>Full-Stack Developer ● Web3 Enthusiast ● Building In Public ● </Parallax>
+      <Parallax baseVelocity={5}>Full-Stack Developer ● Web3 Enthusiast ● Building In Public ● </Parallax>
+    </section>
+  );
+}
