@@ -20,7 +20,14 @@ const Project = ({id, title, description, tags}: projectData) => {
           className="w-full object-cover h-auto rounded-2xl shadow-md border-1 border-black/10"
           src={`/projects/${id}.jpg`}
         />
-        <Link as={Button} className="absolute bottom-3 right-3 z-10 font-medium px-4" size="sm" radius="lg" variant="faded" isBlock isExternal showAnchorIcon>Link</Link>
+        <Link
+          as={Button}
+          className="absolute bottom-3 right-3 z-10 font-medium"
+          size="sm" radius="lg" color="foreground" variant="solid"
+          isExternal showAnchorIcon
+        >
+          <span className="hidden md:block">Link</span>
+        </Link>
       </div>
       <div className="flex flex-col xs:flex-row justify-between items-start xs:items-center w-full mb-2 mt-6">
         <h4 className="text-text font-medium text-2xl my-1">{title}</h4>
