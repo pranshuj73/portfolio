@@ -24,7 +24,7 @@ export default function Landing() {
   };
 
   return (
-    <Section>
+    <Section id='hey'>
       <motion.div
         variants={container}
         initial="hidden"
@@ -34,8 +34,10 @@ export default function Landing() {
         <p>
           <motion.span variants={child} className="inline-block mr-6">Hey! </motion.span>
           <motion.span variants={child} className="inline-block mr-6">I'm </motion.span>
-          <motion.span variants={child} className="inline-block">Pranshu</motion.span>
-          <motion.span variants={child} className="inline-block">,</motion.span>
+          <span className='whitespace-nowrap'>
+            <motion.span variants={child} className="inline-block">Pranshu</motion.span>
+            <motion.span variants={child} className="inline-block">,</motion.span>
+          </span>
         </p>
         <p>
           <motion.span variants={child} className="inline-block mr-6">a </motion.span>

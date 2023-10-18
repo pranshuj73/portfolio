@@ -67,8 +67,8 @@ export default function Projects() {
     }
   ]
   return (
-    <Section>
-      <h1 className="typing-demo text-4xl mt-24 mb-10">&gt; Projects</h1>
+    <Section id="projects">
+      <h1 className="typing text-7xl mt-24 mb-12 h-20">&gt; Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-10">
         {data.map((project) => <Project {...project} />)}
         <Project id={0} title="More Projects" description="Check out more of my projects on GitHub." link="https://github.com/pranshuj73" tags="GitHub" />
