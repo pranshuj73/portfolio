@@ -67,7 +67,7 @@ export default function Projects() {
     }
   ]
   return (
-    <Section id="projects">
+    <Section id="projects" className="scroll-mt-8">
       <h1 className="typing text-3xl xs:text-4xl sm:text-5xl lg:text-7xl my-6 h-full lg:h-20">&gt; Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-10">
         {data.map((project) => <Project {...project} />)}
