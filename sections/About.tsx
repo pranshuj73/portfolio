@@ -5,7 +5,7 @@ export default function About() {
   const ParallaxImage = dynamic(() => import("@/components/ParallaxImage"), { ssr: false })
 
   return (
-    <section id="about" className='scroll-mt-8 min-h-screen max-w-full md:max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 gap-12 p-6 xs:p-10'>
+    <section id="about" className='scroll-mt-8 min-h-screen max-w-full md:max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 gap-12 p-6 xs:p-10 my-8'>
       <ParallaxImage src="/about.jpg" alt="Pranshu Jha" className="rounded-lg grayscale hover:grayscale-0 duration-700 delay-150 transition-all ease-soft-spring" />
 
       <div className="m-4 max-w-2xl flex flex-col justify-center">
