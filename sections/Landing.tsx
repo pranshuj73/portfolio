@@ -24,7 +24,7 @@ export default function Landing() {
   };
 
   return (
-    <Section id='hey'>
+    <Section>
       <motion.div
         variants={container}
         initial="hidden"
