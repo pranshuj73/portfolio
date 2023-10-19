@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .min-h-dynamic {
+    min-height: 100vh; /* fallback for Opera, IE and etc. */
+    min-height: 100dvh;
+  }
+}
+
 html, body {
   margin: 0;
   padding: 0;
