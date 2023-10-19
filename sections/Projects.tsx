@@ -17,7 +17,7 @@ const Project = ({id, title, description, tags, link}: projectData) => {
           alt={title}
           placeholder="blur"
           blurDataURL={`/projects/${id}.jpg`}
-          className="w-full object-cover h-auto rounded-2xl shadow-md border-1 border-black/10"
+          className="w-full object-cover h-auto rounded-2xl shadow-medium border-1 border-black/10"
           src={`/projects/${id}.jpg`}
         />
         { link ? (

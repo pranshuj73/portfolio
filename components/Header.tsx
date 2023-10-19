@@ -3,7 +3,6 @@
 import {Button} from "@nextui-org/button";
 import {Link} from "@nextui-org/link";
 import {Tooltip} from "@nextui-org/tooltip";
-import {Divider} from "@nextui-org/divider";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 import { useState } from "react";
 
@@ -20,9 +19,9 @@ export default function Header() {
           <NavbarBrand className="text-lg lg:hidden"> <Link color="foreground" href="#hey">PJ</Link> </NavbarBrand>
           <NavbarContent className="lg:data-[justify=start]:justify-start data-[justify=start]:justify-end data-[justify=start]:flex-grow data-[justify=start]:basis-0">
             <NavbarItem className="mr-12 hidden lg:block"> <Link className="text-lg" color="foreground" href="#hey">Pranshu Jha</Link> </NavbarItem>
-            <NavbarItem> <Link className="text-sm sm:text-md md:text-base text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" underline="hover" href="#about">About</Link> </NavbarItem>
-            <NavbarItem> <Link className="text-sm sm:text-md md:text-base text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" underline="hover" href="#projects">Projects</Link> </NavbarItem>
-            <NavbarItem> <Link className="text-sm sm:text-md md:text-base text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" underline="hover" href="#contact">Contact</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-text border-opacity-0 hover:border-opacity-70 text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" href="#about">About</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-text border-opacity-0 hover:border-opacity-70 text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" href="#projects">Projects</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-text border-opacity-0 hover:border-opacity-70 text-text/70 hover:text-text duration-400 transition-all ease-in-out" color="foreground" href="#contact">Contact</Link> </NavbarItem>
           </NavbarContent>
           
         <NavbarContent className="hidden lg:flex" justify="end">

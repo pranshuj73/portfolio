@@ -26,10 +26,6 @@ const config: Config = {
         '4xl': '3.158rem',
         '5xl': '4.210rem',
       },
-      fontFamily: {
-        heading: 'Poppins',
-        body: 'Cabin',
-      },
       fontWeight: {
         normal: '400',
         bold: '700',
