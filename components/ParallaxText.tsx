@@ -76,7 +76,7 @@ function Parallax({ children, baseVelocity = 100 }: ParallaxProps) {
 
 export default function ParallaxText() {
   return (
-    <section className="my-8 mb-16 overflow-hidden w-full">
+    <section className="my-2 mb-4 md:my-8 md:mb-16 overflow-hidden w-full">
       <Parallax baseVelocity={-5}>Full-Stack Developer ● Web3 Enthusiast ● Building In Public ● </Parallax>
       <Parallax baseVelocity={5}>Full-Stack Developer ● Web3 Enthusiast ● Building In Public ● </Parallax>
     </section>
