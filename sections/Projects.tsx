@@ -41,7 +41,7 @@ const Project = ({id, title, description, tags, link}: projectData) => {
         ) }
       </div>
       <div className="flex flex-col xs:flex-row justify-between items-start xs:items-center w-full mb-2 mt-6">
-        <h4 className="text-text font-medium text-2xl my-1">{title}</h4>
+        <h4 className="text-text font-medium text-xl md:text-2xl my-1">{title}</h4>
         <p className="text-sm text-text/40 uppercase font-bold my-1">{tags}</p>
       </div>
       <p className="text-text/70 sm:text-sm md:text-base">{description}</p>
@@ -68,7 +68,7 @@ export default function Projects() {
   ]
   return (
     <Section id="projects" className="scroll-mt-8 -mb-32">
-      <div className="w-full"><h1 className="typing text-2xl sm:text-4xl my-6">&gt; Projects</h1></div>
+      <div className="w-full"><h1 className="typing text-3xl sm:text-4xl my-6">&gt; Projects</h1></div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {data.map((project) => <Project {...project} />)}
         <Project id={0} title="More Projects" description="Check out more of my projects on GitHub." link="https://github.com/pranshuj73" tags="GitHub" />
