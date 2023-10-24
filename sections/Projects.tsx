@@ -52,18 +52,19 @@ const Project = ({id, title, description, tags, link}: projectData) => {
 export default function Projects() {
   const data: projectData[] = [
     {
-      id: 1, tags: "NextJS", title: "Dystopian",
+      id: 1, title: "Dystopian", tags: "NextJS, Canvas",
       description: "Dystopian is a gamified learning platform that allows students to learn programming easily through bite-sized lessons built into the plot of the game. Students can also compete with each other in the leaderboard.",
       link: "https://github.com/Razor-Code/dystopian"
     },
     { 
-      id: 2, tags: "Blockchain", title: "XDC Health",
+      id: 2, title: "XDC Health", tags: "Blockchain",
       description: "Built for PLI Blockathon '22, XDC Health is an Electronic Healthcare Management System built upon XDC Blockchain allowing healthcare recorrds to be stored on the blockchain.",
       link: "https://github.com/Razor-Code/xdc-health-revise"
     },
     {
-      id: 3, tags: "NextJS, TailwindCSS", title: "Tranquil",
-      description: "Tranquil is a collection of aesthetic TailwindCSS components which can be edited on the web as per need using AI. It is currently under development."
+      id: 3, title: "Oreweb", tags: "NextJS, P2P",
+      description: "Oreweb is a P2P file sharing platform built on NextJS and PeerJS that allows users to share files with each other anonymously without any middleman.",
+      link: "https://oreweb.vercel.app/"
     }
   ]
   return (
