@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .noise-bg {
+    background-image: url('/noise.svg');
+    @apply bg-background;
+  }
+}
+
 @layer utilities {
   .min-h-dynamic {
     min-height: 100vh; /* fallback for Opera, IE and etc. */
