@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + " noise-bg text-text"}>
+      <body className={inter.className + " bg-background text-text"}>
         <Providers>
           <Header />
           {children}

@@ -9,7 +9,7 @@ interface projectData{id: number, title: string, description: string, tags: stri
 
 const Project = ({id, title, description, tags, link}: projectData) => {
   return (
-    <div key={id.toString()} className="flex flex-col my-6">
+    <div key={id} className="flex flex-col my-6">
       <div className="w-full h-auto relative">
         <Image
           width={600}
