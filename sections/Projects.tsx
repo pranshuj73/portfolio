@@ -9,7 +9,7 @@ interface projectData{id: number, title: string, description: string, tags: stri
 
 const Project = ({id, title, description, tags, link}: projectData) => {
   return (
-    <div key={id} className="flex flex-col my-6">
+    <div className="flex flex-col my-6">
       <div className="w-full h-auto relative">
         <Image
           width={600}
@@ -71,7 +71,7 @@ export default function Projects() {
     <Section id="projects" className="scroll-mt-8 -mb-32">
       <div className="w-full"><h1 className="typing text-3xl sm:text-4xl my-6">&gt; Projects</h1></div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        {data.map((project) => <Project {...project} />)}
+        {data.map((project) => <Project key={project.id} {...project} />)}
         <Project id={0} title="More Projects" description="Check out more of my projects on GitHub." link="https://github.com/pranshuj73" tags="GitHub" />
       </div>
     </Section>
