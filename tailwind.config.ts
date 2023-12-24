@@ -29,14 +29,7 @@ const config: Config = {
       fontWeight: {
         normal: '400',
         bold: '700',
-      },
-      colors: {
-        'text': '#0e1a25',
-        'background': '#edf3f8',
-        'primary': '#6497c4',
-        'secondary': '#d3e1ee',
-        'accent': '#437eb1',
-       },        
+      },     
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -45,6 +38,23 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui({
+    themes: {
+      light: {
+        colors: {
+          foreground: '#0e1a25',
+          background: '#edf3f8',
+          text: '#677179',
+        },
+      },
+      dark: {
+        colors: {
+          foreground: '#f4f4f5',
+          background: '#18181b',
+          text: '#9c9c9e',
+        },
+      },
+    },
+  })],
 }
 export default config

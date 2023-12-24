@@ -11,6 +11,12 @@ import {
   useAnimationFrame
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
+import { Space_Mono } from "next/font/google"
+
+const vt323 = Space_Mono({
+  weight: "700",
+  subsets: ["latin"],
+});
 
 interface ParallaxProps {
   children: string;
@@ -64,7 +70,7 @@ function Parallax({ children, baseVelocity = 100 }: ParallaxProps) {
    */
   return (
     <div className="opacity-60 overflow-hidden m-0 whitespace-nowrap flex flex-nowrap">
-      <motion.div className="sm:text-lg md:text-xl lg:text-2xl md:my-1 lg:my-2 whitespace-nowrap flex flex-nowrap" style={{ x }}>
+      <motion.div className="sm:text-md md:text-lg lg:text-xl md:my-1 lg:my-1 whitespace-nowrap flex flex-nowrap" style={{ x }}>
         <span className="block mr-3">{children} </span>
         <span className="block mr-3">{children} </span>
         <span className="block mr-3">{children} </span>
@@ -76,9 +82,9 @@ function Parallax({ children, baseVelocity = 100 }: ParallaxProps) {
 
 export default function ParallaxText() {
   return (
-    <section className="my-2 mb-4 md:my-8 md:mb-16 overflow-hidden w-full ">
-      <Parallax baseVelocity={-5}>Full-Stack Developer ● Web3 Enthusiast ● Building In Public ● </Parallax>
-      <Parallax baseVelocity={5}>Full-Stack Developer ● Web3 Enthusiast ● Building In Public ● </Parallax>
+    <section className={`my-2 mb-4 md:my-8 md:mb-16 overflow-hidden w-full ${vt323.className}`}>
+      <Parallax baseVelocity={-5}>Full-Stack Developer ✦ Web3 Enthusiast ✦ Building In Public ✦ </Parallax>
+      <Parallax baseVelocity={5}>Full-Stack Developer ✦ Web3 Enthusiast ✦ Building In Public ✦ </Parallax>
     </section>
   );
 }

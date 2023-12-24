@@ -38,13 +38,13 @@ export default function Contact() {
   return (
     <Section id="contact">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 uppercase text-center mt-32">
-        Got something in mind?<br />Let's Talk.
+        Let's get in touch!
       </h1>
-      <h3 className="mt-4">Drop me an email:</h3>
-      <Link className="text-lg xs:text-xl font-medium border-b-large border-dashed border-black border-opacity-30 hover:border-opacity-80 duration-400 transition-all ease-in-out" href="mailto:hello@pranshujha.com" color="foreground" isExternal showAnchorIcon>
+      <h3 className="mt-4 text-text">Drop me an email:</h3>
+      <Link className="text-lg xs:text-xl font-medium border-b-large border-dashed border-foreground border-opacity-30 hover:border-opacity-80 duration-400 transition-all ease-in-out" href="mailto:hello@pranshujha.com" color="foreground" isExternal showAnchorIcon>
         <span className="mt-1 mr-1">hello@pranshujha.com</span>
       </Link>
-      <h3 className="mt-8 mb-2">Or, find me at</h3>
+      <h3 className="mt-8 mb-2 text-text">Or, find me at</h3>
       <div className="flex flex-row items-center justify-center gap-4">
         <Button as={Link} href="https://twitter.com/pranshuj73" aria-label="X (Twitter)" isIconOnly color="primary" variant="faded" isExternal> <TwitterIcon /> </Button>
         <Button as={Link} href="https://www.linkedin.com/in/pranshuj73/" aria-label="LinkedIn" isIconOnly color="primary" variant="faded" isExternal> <LinkedInIcon /> </Button>

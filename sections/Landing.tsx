@@ -32,8 +32,8 @@ export default function Landing() {
         className='text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold uppercase'
       >
         <p>
-          <motion.span variants={child} className="inline-block mr-6">Hey! </motion.span>
-          <motion.span variants={child} className="inline-block mr-6">I'm </motion.span>
+          <motion.span variants={child} className="inline-block mr-6">Hey!</motion.span>
+          <motion.span variants={child} className="inline-block mr-6">I'm</motion.span>
           <span className='whitespace-nowrap'>
             <motion.span variants={child} className="inline-block">Pranshu</motion.span>
             <motion.span variants={child} className="inline-block">,</motion.span>
@@ -41,9 +41,9 @@ export default function Landing() {
         </p>
         <p>
           <motion.span variants={child} className="inline-block mr-6">a </motion.span>
-          <motion.span variants={child} className="inline-block">Full</motion.span>
-          <motion.span variants={child} className="inline-block">-</motion.span>
-          <motion.span variants={child} className="inline-block mr-6">Stack </motion.span>
+          <motion.span variants={child} className="inline-block hollow">Full</motion.span>
+          <motion.span variants={child} className="inline-block hollow">-</motion.span>
+          <motion.span variants={child} className="inline-block hollow mr-6">Stack</motion.span>
           <motion.span variants={child} className="inline-block">Developer</motion.span>
         </p>
       </motion.div>
@@ -53,7 +53,7 @@ export default function Landing() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.5 }}
-          className="animate-bounce w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#000"
+          className="animate-bounce w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </motion.svg>

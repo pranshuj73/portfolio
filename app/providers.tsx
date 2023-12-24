@@ -2,6 +2,7 @@
 'use client'
 
 import {NextUIProvider} from '@nextui-org/react'
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import dynamic from 'next/dynamic';
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
@@ -12,21 +13,34 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 export function Providers({children}: { children: React.ReactNode }) {
   return (
     <NextUIProvider>
-      <AnimatedCursor
-        innerSize={10}
-        outerSize={50}
-        innerScale={1}
-        outerScale={2}
-        outerAlpha={0}
-        trailingSpeed={16}
-        innerStyle={{
-          backgroundColor: '#0e1a25'
-        }}
-        outerStyle={{
-          border: '3px solid #0e1a25'
-        }}
-      />
-      {children}
+      <NextThemesProvider attribute="class" defaultTheme="dark">
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={50}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          trailingSpeed={16}
+          innerStyle={{ backgroundColor: 'currentColor' }}
+          outerStyle={{ border: '3px solid currentColor' }}
+          clickables={[
+            'a', 'input[type="text"]', 'input[type="email"]', 'input[type="number"]', 'input[type="submit"]', 'input[type="image"]', 'label[for]', 'select', 'textarea', 'button', '.link',
+            {
+              target: '.hollow',
+              innerSize: 12,
+              outerSize: 12,
+              color: '255, 255, 255',
+              outerAlpha: 1,
+              innerScale: 0.7,
+              outerScale: 7,
+              outerStyle: {
+                mixBlendMode: 'difference'
+              }
+            }
+          ]}
+        />
+        {children}
+      </NextThemesProvider>
     </NextUIProvider>
   )
 }

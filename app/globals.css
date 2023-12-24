@@ -50,3 +50,15 @@ html, body {
 @keyframes blink {
   50% { border-color: transparent }
 }
+
+.hollow{
+  color: currentColor;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 2px currentColor;
+}
+
+@media screen and (max-width: 768px) {
+  .hollow {
+    -webkit-text-stroke: 1px currentColor;
+  }
+}

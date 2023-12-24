@@ -17,7 +17,7 @@ const Project = ({id, title, description, tags, link}: projectData) => {
           alt={title}
           placeholder="blur"
           blurDataURL={`/projects/${id}.jpg`}
-          className="w-full object-cover h-auto rounded-2xl shadow-medium border-1 border-black/10"
+          className="w-full object-cover h-auto rounded-2xl shadow-medium border-1 border-foreground/10"
           src={`/projects/${id}.jpg`}
         />
         { link ? (
@@ -41,10 +41,10 @@ const Project = ({id, title, description, tags, link}: projectData) => {
         ) }
       </div>
       <div className="flex flex-col xs:flex-row justify-between items-start xs:items-center w-full mb-2 mt-6">
-        <h4 className="text-text font-medium text-xl md:text-2xl my-1">{title}</h4>
-        <p className="text-sm text-text/40 uppercase font-bold my-1">{tags}</p>
+        <h4 className="text-foreground font-medium text-xl md:text-2xl my-1">{title}</h4>
+        <p className="text-sm text-foreground/40 uppercase font-bold my-1">{tags}</p>
       </div>
-      <p className="text-text/70 sm:text-sm md:text-base">{description}</p>
+      <p className="text-text sm:text-sm md:text-base">{description}</p>
     </div>
   )
 }
