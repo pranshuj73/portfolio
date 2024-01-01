@@ -13,9 +13,10 @@ const CopyIcon = () => {
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const navAnimProps = {initial:{ opacity: 0, y: -20 }, animate:{ opacity: 1, y: 0 }, transition:{ duration: 0.5, delay: 0.25 }}
 
   return (
-    <Navbar shouldHideOnScroll position="static" className="w-full uppercase font-semibold" maxWidth="xl" motionProps={{initial:{ opacity: 0, y: -20 }, animate:{ opacity: 1, y: 0 }, transition:{ duration: 0.5, delay: 0.25 }}}>
+    <Navbar shouldHideOnScroll position="static" className="w-full uppercase font-semibold" maxWidth="xl" motionProps={navAnimProps}>
       {/* <Divider orientation="horizontal" className="w-full absolute right-0 md:block -z-10"/> */}
           <NavbarBrand className="text-lg lg:hidden"> <Link color="foreground" href="#hey">PJ</Link> </NavbarBrand>
           <NavbarContent className="lg:data-[justify=start]:justify-start data-[justify=start]:justify-end data-[justify=start]:flex-grow data-[justify=start]:basis-0">

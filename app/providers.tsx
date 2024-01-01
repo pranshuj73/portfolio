@@ -11,9 +11,12 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 
 
 export function Providers({children}: { children: React.ReactNode }) {
+  const devMode = process.env.NODE_ENV === 'production' ? false : true;
+
   return (
     <NextUIProvider>
-      <NextThemesProvider attribute="class" defaultTheme="dark">
+      <NextThemesProvider attribute="class" defaultTheme="light">
+        {!devMode &&
         <AnimatedCursor
           innerSize={10}
           outerSize={50}
@@ -26,7 +29,7 @@ export function Providers({children}: { children: React.ReactNode }) {
           clickables={[
             'a', 'input[type="text"]', 'input[type="email"]', 'input[type="number"]', 'input[type="submit"]', 'input[type="image"]', 'label[for]', 'select', 'textarea', 'button', '.link',
             {
-              target: '.hollow',
+              target: '.inverted',
               innerSize: 12,
               outerSize: 12,
               color: '255, 255, 255',
@@ -38,7 +41,7 @@ export function Providers({children}: { children: React.ReactNode }) {
               }
             }
           ]}
-        />
+        />}
         {children}
       </NextThemesProvider>
     </NextUIProvider>

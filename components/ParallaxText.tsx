@@ -13,7 +13,7 @@ import {
 import { wrap } from "@motionone/utils";
 import { Space_Mono } from "next/font/google"
 
-const vt323 = Space_Mono({
+const spaceMono = Space_Mono({
   weight: "700",
   subsets: ["latin"],
 });
@@ -82,7 +82,7 @@ function Parallax({ children, baseVelocity = 100 }: ParallaxProps) {
 
 export default function ParallaxText() {
   return (
-    <section className={`my-2 mb-4 md:my-8 md:mb-16 overflow-hidden w-full ${vt323.className}`}>
+    <section className={`my-2 mb-4 md:my-8 md:mb-16 overflow-hidden w-full ${spaceMono.className}`}>
       <Parallax baseVelocity={-5}>Full-Stack Developer ✦ Web3 Enthusiast ✦ Building In Public ✦ </Parallax>
       <Parallax baseVelocity={5}>Full-Stack Developer ✦ Web3 Enthusiast ✦ Building In Public ✦ </Parallax>
     </section>
