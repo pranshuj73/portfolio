@@ -35,7 +35,7 @@ export default function Landing() {
 
   return (
     <Section className="md:max-w-screen-xl" id='hey'>
-      <motion.div className="w-full -mt-[5%] mb-[5%]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
+      <motion.div className="w-full mb-[5%]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
         <motion.div
           variants={detailsContainer}
           initial="hidden"
@@ -64,7 +64,7 @@ export default function Landing() {
         variants={detailsContainer}
         initial="hidden"
         animate="visible"
-        className="w-full flex flex-col mt-[7%] -mb-[7%]"
+        className="w-full flex flex-col mt-[7%]"
       >
         <motion.span variants={detailsChild} className="my-1">Currently → <b>Senior Developer, Rook</b></motion.span>
         <motion.span variants={detailsChild} className="my-1">Studying → <b>BE CSE @ RIT</b></motion.span>

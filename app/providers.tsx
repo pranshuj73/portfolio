@@ -15,7 +15,7 @@ export function Providers({children}: { children: React.ReactNode }) {
 
   return (
     <NextUIProvider>
-      <NextThemesProvider attribute="class" defaultTheme="light">
+      <NextThemesProvider attribute="class" defaultTheme="dark">
         {!devMode &&
         <AnimatedCursor
           innerSize={10}
