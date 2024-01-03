@@ -7,7 +7,7 @@ import LocalTime from "@/components/LocalTime";
 
 import { Manrope } from "next/font/google"
 
-const spaceMono = Manrope({
+const headingFont = Manrope({
   weight: "600",
   subsets: ["latin"],
 });
@@ -59,7 +59,7 @@ export default function Landing() {
         variants={headingContainer}
         initial="hidden"
         animate="visible"
-        className={`text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold w-full p-0 ${spaceMono.className}`}
+        className={`text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold w-full p-0 ${headingFont.className}`}
       >
         <motion.span variants={headingChild} className="inline-block mr-6">Hey!</motion.span>
         <motion.span variants={headingChild} className="inline-block mr-6">I'm</motion.span>
