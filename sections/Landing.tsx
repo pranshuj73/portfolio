@@ -64,12 +64,12 @@ export default function Landing() {
         variants={detailsContainer}
         initial="hidden"
         animate="visible"
-        className="w-full flex flex-col mt-[7%]"
+        className="w-full flex flex-col mt-[10%]"
       >
-        <motion.span variants={detailsChild} className="my-1">Currently → <b>Senior Developer, Rook</b></motion.span>
-        <motion.span variants={detailsChild} className="my-1">Studying → <b>BE CSE @ RIT</b></motion.span>
+        <motion.span variants={detailsChild} className="my-2">Currently → <b>Senior Developer, Rook</b></motion.span>
+        <motion.span variants={detailsChild} className="my-2">Studying → <b>BE CSE @ RIT</b></motion.span>
         {/* <span className="my-1">Previously → Google • Microsoft</span> */}
-        <motion.span variants={detailsChild} className="my-1">Creating → <b>Magic ✨</b></motion.span>
+        <motion.span variants={detailsChild} className="my-2">Creating → <b>Magic ✨</b></motion.span>
       </motion.div>
 
       <a className='absolute bottom-20 w-8 h-8' href='#about'>
