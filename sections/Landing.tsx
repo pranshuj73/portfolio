@@ -8,7 +8,7 @@ import LocalTime from "@/components/LocalTime";
 import { Manrope } from "next/font/google"
 
 const spaceMono = Manrope({
-  weight: "500",
+  weight: "600",
   subsets: ["latin"],
 });
 
