@@ -16,19 +16,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #bdc2c7;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #4a5157;
-  border-radius: 10px;
-}
 
 .typing {
   width: 10ch;
@@ -49,16 +36,4 @@ html, body {
     
 @keyframes blink {
   50% { border-color: transparent }
-}
-
-.hollow{
-  color: currentColor;
-  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke: 2px currentColor;
-}
-
-@media screen and (max-width: 768px) {
-  .hollow {
-    -webkit-text-stroke: 1px currentColor;
-  }
 }

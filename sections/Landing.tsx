@@ -5,6 +5,12 @@ import Section from '@/components/Section';
 import { motion } from 'framer-motion'
 import LocalTime from "@/components/LocalTime";
 
+import { Manrope } from "next/font/google"
+
+const spaceMono = Manrope({
+  weight: "500",
+  subsets: ["latin"],
+});
 
 export default function Landing() {
   // get the local time of a particular timezone
@@ -53,7 +59,7 @@ export default function Landing() {
         variants={headingContainer}
         initial="hidden"
         animate="visible"
-        className='text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold uppercase w-full p-0'
+        className={`text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold w-full p-0 ${spaceMono.className}`}
       >
         <motion.span variants={headingChild} className="inline-block mr-6">Hey!</motion.span>
         <motion.span variants={headingChild} className="inline-block mr-6">I'm</motion.span>
