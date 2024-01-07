@@ -42,16 +42,16 @@ const config: Config = {
     themes: {
       light: {
         colors: {
-          foreground: '#020617',
+          foreground: '#4b4f53',
           background: '#edf3f8',
-          text: '#677179',
+          heading: '#121314',
         },
       },
       dark: {
         colors: {
-          foreground: '#edf3f8',
-          background: '#020617',
-          text: '#c9cbd2',
+          foreground: '#989ea3',
+          background: '#121314',
+          heading: '#edf3f8',
         },
       },
     },

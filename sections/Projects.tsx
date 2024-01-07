@@ -41,10 +41,10 @@ const Project = ({id, title, description, tags, link}: projectData) => {
         ) }
       </div>
       <div className="flex flex-col xs:flex-row justify-between items-start xs:items-center w-full mb-2 mt-6">
-        <h4 className="text-foreground font-medium text-xl md:text-2xl my-1">{title}</h4>
-        <p className="text-sm text-foreground/40 uppercase font-bold my-1">{tags}</p>
+        <h4 className="font-medium text-xl md:text-2xl my-1">{title}</h4>
+        <p className="text-sm uppercase font-bold my-1">{tags}</p>
       </div>
-      <p className="text-text sm:text-sm md:text-base">{description}</p>
+      <p className="sm:text-sm md:text-base">{description}</p>
     </div>
   )
 }

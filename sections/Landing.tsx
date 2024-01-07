@@ -40,7 +40,7 @@ export default function Landing() {
   };
 
   return (
-    <Section className="md:max-w-screen-xl" id='hey'>
+    <Section className="md:max-w-screen-xl text-heading" id='hey'>
       <motion.div className="w-full -mt-[15%] md:mt-0 mb-[5%]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
         <motion.div
           variants={detailsContainer}

@@ -20,15 +20,15 @@ export default function Header() {
       {/* <Divider orientation="horizontal" className="w-full absolute right-0 md:block -z-10"/> */}
           <NavbarBrand className="text-lg lg:hidden"> <Link color="foreground" href="#hey">PJ</Link> </NavbarBrand>
           <NavbarContent className="lg:data-[justify=start]:justify-start data-[justify=start]:justify-end data-[justify=start]:flex-grow data-[justify=start]:basis-0">
-            <NavbarItem className="mr-12 hidden lg:block"> <Link className="text-lg" color="foreground" href="#hey">Pranshu Jha</Link> </NavbarItem>
-            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-foreground border-opacity-0 hover:border-opacity-70 text-text hover:text-foreground duration-400 transition-all ease-in-out" color="foreground" href="#contact">Contact</Link> </NavbarItem>
-            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-foreground border-opacity-0 hover:border-opacity-70 text-text hover:text-foreground duration-400 transition-all ease-in-out" color="foreground" href="#about">About</Link> </NavbarItem>
-            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-foreground border-opacity-0 hover:border-opacity-70 text-text hover:text-foreground duration-400 transition-all ease-in-out" color="foreground" href="#projects">Projects</Link> </NavbarItem>
+            <NavbarItem className="mr-12 hidden lg:block"> <Link className="text-lg text-heading" color="foreground" href="#hey">Pranshu Jha</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-foreground border-opacity-0 hover:border-opacity-70 hover:text-heading duration-400 transition-all ease-in-out" color="foreground" href="#contact">Contact</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-foreground border-opacity-0 hover:border-opacity-70 hover:text-heading duration-400 transition-all ease-in-out" color="foreground" href="#about">About</Link> </NavbarItem>
+            <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-foreground border-opacity-0 hover:border-opacity-70 hover:text-heading duration-400 transition-all ease-in-out" color="foreground" href="#projects">Projects</Link> </NavbarItem>
           </NavbarContent>
           
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex items-center justify-center">
-            <h2 className="text-text">Let's Connect 👉</h2>
+            <span>Let's Connect 👉</span>
             <Tooltip isOpen={isOpen} onOpenChange={(open) => setIsOpen(open)} defaultOpen={false} isDisabled={!isOpen} placement="bottom" content="Email Copied!" color="foreground">
               <Button className="bg-background ml-6" variant="ghost" endContent={<CopyIcon/>} onPress={() => {navigator.clipboard.writeText("hello@pranshujha.com"); setIsOpen(true)}}>
                 hello@pranshujha.com

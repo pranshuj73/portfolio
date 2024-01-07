@@ -16,6 +16,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6, .text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl {
+  color: hsl(var(--nextui-heading));
+}
+
 
 .typing {
   width: 10ch;
