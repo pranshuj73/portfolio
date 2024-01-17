@@ -4,6 +4,7 @@ import {Divider} from "@nextui-org/react";
 import Section from '@/components/Section';
 import { motion } from 'framer-motion'
 import LocalTime from "@/components/LocalTime";
+import Image from "next/image";
 
 import { Manrope } from "next/font/google"
 
@@ -61,10 +62,12 @@ export default function Landing() {
         animate="visible"
         className={`text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold w-full p-0 ${headingFont.className}`}
       >
-        <motion.span variants={headingChild} className="inline-block mr-6">Hey!</motion.span>
-        <motion.span variants={headingChild} className="inline-block mr-6">I'm</motion.span>
-        <motion.span variants={headingChild} className="inline-block mr-3">Pranshu</motion.span>
-        <motion.span variants={headingChild} className="inline-block">👋</motion.span>
+        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">Hey!</motion.span>
+        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">I'm</motion.span>
+        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">Pranshu</motion.span>
+        <motion.div variants={headingChild} className="inline-block">
+          <Image className="h-auto w-10 xs:w-12 sm:w-14 md:w-18 lg:w-24 -mb-2" src="/smiley.svg" alt="smiley svg" width={40} height={40} />
+        </motion.div>
       </motion.div>
 
       <motion.div
