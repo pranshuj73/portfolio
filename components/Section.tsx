@@ -1,6 +1,6 @@
 export default function Section(props: { children: React.ReactNode, className?: string, id: string }) {
   return (
-    <section id={props.id} className={'min-h-dynamic w-full max-w-full md:max-w-screen-2xl flex flex-col items-center justify-center relative p-6 xs:p-10 my-8 ' + props.className}>
+    <section id={props.id} className={'min-h-dynamic transition-all duration-75 ease-soft-spring w-full max-w-full md:max-w-screen-2xl flex flex-col items-center justify-center relative p-6 xs:p-10 my-8 ' + props.className}>
       {props.children}
     </section>
   )
