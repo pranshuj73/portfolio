@@ -63,7 +63,8 @@ export default function Landing() {
       >
         <motion.span variants={headingChild} className="inline-block mr-6">Hey!</motion.span>
         <motion.span variants={headingChild} className="inline-block mr-6">I'm</motion.span>
-        <motion.span variants={headingChild} className="inline-block">Pranshu</motion.span>
+        <motion.span variants={headingChild} className="inline-block mr-3">Pranshu</motion.span>
+        <motion.span variants={headingChild} className="inline-block">👋</motion.span>
       </motion.div>
 
       <motion.div
