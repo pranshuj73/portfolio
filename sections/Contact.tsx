@@ -37,6 +37,7 @@ const BlogIcon = () => {
 export default function Contact() {
   return (
     <Section id="contact">
+      <span className="absolute -left-60 mt-28 text-[8rem] font-bold -rotate-90 -z-50 opacity-10">CONTACT</span>
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 uppercase text-center mt-32">
         Let's get in touch!
       </h1>
@@ -49,7 +50,7 @@ export default function Contact() {
         <Button as={Link} href="https://twitter.com/pranshuj73" aria-label="X (Twitter)" isIconOnly variant="ghost" isExternal> <TwitterIcon /> </Button>
         <Button as={Link} href="https://www.linkedin.com/in/pranshuj73/" aria-label="LinkedIn" isIconOnly variant="ghost" isExternal> <LinkedInIcon /> </Button>
         <Button as={Link} href="https://github.com/pranshuj73" aria-label="GitHub" isIconOnly variant="ghost" isExternal> <GitHubIcon /> </Button>
-        <Button as={Link} href="https://blog.pranshujha.com/" aria-label="My Blog" isIconOnly variant="ghost" isExternal> <BlogIcon /> </Button>
+        <Button as={Link} href="https://pranshujha.com/blog" aria-label="My Blog" isIconOnly variant="ghost" isExternal> <BlogIcon /> </Button>
       </div>
     </Section>
   )
