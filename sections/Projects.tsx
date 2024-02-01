@@ -10,14 +10,14 @@ interface projectData{id: number, title: string, description: string, tags: stri
 const Project = ({id, title, description, tags, link}: projectData) => {
   return (
     <div className="flex flex-col my-6">
-      <div className="w-full h-auto relative">
+      <div className="w-full h-auto relative overflow-hidden rounded-2xl shadow-medium border-2 border-foreground/10">
         <Image
           width={600}
           height={400}
           alt={title}
           placeholder="blur"
           blurDataURL={`/projects/${id}.jpg`}
-          className="w-full object-cover h-auto rounded-2xl shadow-medium border-1 border-foreground/10"
+          className="w-full object-cover h-auto hover:scale-105 transition-all ease-in-out duration-300"
           src={`/projects/${id}.jpg`}
         />
         { link ? (

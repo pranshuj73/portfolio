@@ -7,6 +7,7 @@ import LocalTime from "@/components/LocalTime";
 import Image from "next/image";
 
 import { Manrope } from "next/font/google"
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 const headingFont = Manrope({
   weight: "600",
@@ -62,12 +63,10 @@ export default function Landing() {
         animate="visible"
         className={`text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold w-full p-0 ${headingFont.className}`}
       >
-        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">Hey!</motion.span>
-        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">I'm</motion.span>
-        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">Pranshu</motion.span>
-        <motion.div variants={headingChild} className="inline-block">
-          <Image className="h-auto w-10 xs:w-12 sm:w-14 md:w-18 lg:w-24 -mb-2" src="/smiley.svg" alt="smiley svg" width={40} height={40} />
-        </motion.div>
+        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">Hi,</motion.span>
+        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">this</motion.span>
+        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">is</motion.span>
+        <motion.span variants={headingChild} className="inline-block mr-2 sm:mr-4 md:mr-6">Pranshu.</motion.span>
       </motion.div>
 
       <motion.div
@@ -82,15 +81,8 @@ export default function Landing() {
         <motion.span variants={detailsChild} className="my-2">Creating → <b>Magic ✨</b></motion.span>
       </motion.div>
 
-      <a className='absolute bottom-20 w-8 h-8' href='#about'>
-        <motion.svg
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1.5 }}
-          className="animate-bounce w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-        >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </motion.svg>
+      <a className='absolute bottom-28 w-8 h-8' href='#about'>
+        <ScrollIndicator />
       </a>
     </Section>
   )
