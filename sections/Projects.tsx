@@ -68,7 +68,7 @@ export default function Projects() {
     }
   ]
   return (
-    <Section id="projects" className="scroll-mt-8 -mb-32">
+    <Section id="projects">
       <div className="w-full"><h1 className="typing text-3xl sm:text-4xl my-6">&gt; Projects</h1></div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {data.map((project) => <Project key={project.id} {...project} />)}

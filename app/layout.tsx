@@ -2,11 +2,12 @@ import Header from '@/components/Header'
 import './globals.css'
 // import AnimatedCursor from "react-animated-cursor"
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Onest } from 'next/font/google'
 
 import {Providers} from "./providers";
 
 const inter = Inter({ subsets: ['latin'] })
+const onest = Onest({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Pranshu Jha',
@@ -22,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={onest.className}>
         <Providers>
           <Header />
           {children}

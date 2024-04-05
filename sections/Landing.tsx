@@ -6,21 +6,15 @@ import { motion } from 'framer-motion'
 import LocalTime from "@/components/LocalTime";
 import Image from "next/image";
 
-import { Manrope } from "next/font/google"
+import { Manrope, Onest } from "next/font/google"
 import ScrollIndicator from "@/components/ScrollIndicator";
 
-const headingFont = Manrope({
+const headingFont = Onest({
   weight: "600",
   subsets: ["latin"],
 });
 
 export default function Landing() {
-  // get the local time of a particular timezone
-  let date = new Date();
-  let options = {timeZone: 'America/New_York'};
-  let eastCoastTime = date.toLocaleString('en-US', options);
-
-
   const headingContainer = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({ opacity: 1, transition: { staggerChildren: 0.12, delayChildren: 0.08 * i }, }),
@@ -42,7 +36,7 @@ export default function Landing() {
   };
 
   return (
-    <Section className="md:max-w-screen-xl text-heading" id='hey'>
+    <Section className="md:max-w-screen-2xl text-heading !mt-8" id='hey'>
       <motion.div className="w-full -mt-[15%] md:mt-0 mb-[5%]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
         <motion.div
           variants={detailsContainer}

@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5, h6, .text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .t
   color: hsl(var(--nextui-heading));
 }
 
+button, *[role="button"] {
+  border-radius: 999px!important;
+}
+
 
 .typing {
   width: 10ch;
