@@ -16,7 +16,7 @@ export default function ParallaxImage({src, alt, className}: {src: string, alt: 
   }, []);
 
   return (
-    <div className={"w-full h-full min-h-[85vh] relative overflow-hidden " + (className ? className : "")}>
+    <div className={`w-full min-w-[50%] h-full min-h-[500px] md:min-h-[85vh] relative overflow-hidden ${className}`}>
       <Image ref={imageRef} src={src} fill priority className="object-cover object-center" alt={alt} />
     </div>
   );

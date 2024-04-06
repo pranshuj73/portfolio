@@ -8,7 +8,7 @@ import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 export default function Contact() {
   return (
     <Section className="items-center justify-center mt-0" id="contact">
-      <div className="flex flex-col lg:flex-row items-stretch mt-16">
+      <div className="flex flex-col lg:flex-row items-stretch lg:mt-16">
         <section className="flex flex-col lg:w-7/12 xl:w-8/12">
           <span className="text-2xl md:text-3xl lg:text-4xl font-semibold md:w-10/12">
             I love creating unforgettable digital experiences and websites with people like you.
@@ -33,7 +33,7 @@ export default function Contact() {
                 </div>
             </CardBody>
           </Card>
-          <Card className="mt-8 p-12">
+          <Card className="mt-8 lg:p-12">
             <CardBody className="text-center">
               <span className="text-xl md:text-2xl lg:text-3xl font-semibold mb-3">Ready to get started?</span>
               <span className="text-lg mb-12">Let's jump on a quick call to find out how I can help you the best!</span>

@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <Section className="md:flex-row gap-12 items-stretch" id="about">
-      <ParallaxImage src="/about.jpg" alt="Pranshu Jha" className="rounded-3xl grayscale hover:grayscale-0 duration-700 delay-150 transition-all ease-in-out" />
+      <ParallaxImage src="/about.jpg" alt="Pranshu Jha" className="rounded-3xl grayscale hover:grayscale-0 duration-700 delay-150 transition-all ease-in-out " />
 
       <div className="max-w-2xl flex flex-col gap-4 justify-center text-lg">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Hello World!</h1>

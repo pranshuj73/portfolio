@@ -16,10 +16,10 @@ export default function Header() {
   const navAnimProps = {initial:{ opacity: 0, y: -20 }, animate:{ opacity: 1, y: 0 }, transition:{ duration: 0.5, delay: 0.25 }}
 
   return (
-    <Navbar shouldHideOnScroll className="w-full uppercase font-semibold px-4" maxWidth="2xl" motionProps={navAnimProps}>
+    <Navbar shouldHideOnScroll className="w-full uppercase font-semibold lg:px-4" maxWidth="2xl" motionProps={navAnimProps}>
       {/* <Divider orientation="horizontal" className="w-full absolute right-0 md:block -z-10"/> */}
           <NavbarBrand className="text-lg lg:hidden"> <Link color="foreground" href="#hey">PJ</Link> </NavbarBrand>
-          <NavbarContent className="lg:data-[justify=start]:justify-start data-[justify=start]:justify-end data-[justify=start]:flex-grow data-[justify=start]:basis-0">
+          <NavbarContent className="hidden lg:flex lg:data-[justify=start]:justify-start data-[justify=start]:justify-end data-[justify=start]:flex-grow data-[justify=start]:basis-0">
             <NavbarItem className="mr-12 hidden lg:block"> <Link className="text-lg text-heading" color="foreground" href="#hey">Pranshu Jha</Link> </NavbarItem>
             <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-foreground border-opacity-0 hover:border-opacity-70 hover:text-heading duration-400 transition-all ease-in-out" color="foreground" href="#contact">Contact</Link> </NavbarItem>
             <NavbarItem> <Link className="text-sm sm:text-md md:text-base border-b-large border-dashed border-foreground border-opacity-0 hover:border-opacity-70 hover:text-heading duration-400 transition-all ease-in-out" color="foreground" href="#about">About</Link> </NavbarItem>
@@ -35,7 +35,7 @@ export default function Header() {
               </Button>
             </Tooltip>
           </NavbarItem>
-          <NavbarItem>
+          <NavbarItem className="-mr-2 lg:mr-0">
             <ThemeSwitcher />
           </NavbarItem>
         </NavbarContent>
