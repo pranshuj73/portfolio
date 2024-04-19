@@ -8,6 +8,8 @@ import Image from "next/image";
 
 import { Manrope, Onest } from "next/font/google"
 import ScrollIndicator from "@/components/ScrollIndicator";
+import { useEffect } from "react";
+import { hello } from "@/lib/hello";
 
 const headingFont = Onest({
   weight: "600",
@@ -15,6 +17,8 @@ const headingFont = Onest({
 });
 
 export default function Landing() {
+  useEffect(() => { console.log(hello) }, []);
+
   const headingContainer = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({ opacity: 1, transition: { staggerChildren: 0.12, delayChildren: 0.08 * i }, }),
