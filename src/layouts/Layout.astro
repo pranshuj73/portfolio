@@ -1,22 +1,37 @@
 ---
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
+import '@/styles/globals.css'
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
+		
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+
+		<!-- Primary Meta Tags -->
+		<title>Pranshu Jha</title>
+		<meta name="title" content="Pranshu Jha" />
+		<meta name="description" content="Full-Stack Developer Crafting Unique Digital Experiences." />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="pranshujha.com" />
+		<meta property="og:title" content="Pranshu Jha" />
+		<meta property="og:description" content="Full-Stack Developer Crafting Unique Digital Experiences." />
+		<meta property="og:image" content="/meta.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="pranshujha.com" />
+		<meta property="twitter:title" content="Pranshu Jha" />
+		<meta property="twitter:description" content="Full-Stack Developer Crafting Unique Digital Experiences." />
+		<meta property="twitter:image" content="/meta.jpg" />
+		
 	</head>
-	<body>
+	<body class="dark">
 		<slot />
 	</body>
 </html>
