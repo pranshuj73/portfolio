@@ -7,7 +7,7 @@ export async function GET() {
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
   
   // Construct the path to your resume file
-  const resumePath = path.join(__dirname, '../../../public/resume/resume.pdf');
+  const resumePath = path.join(__dirname, './resume.pdf');
   
   try {
     const file = await fs.readFile(resumePath);
