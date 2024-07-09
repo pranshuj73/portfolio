@@ -1,6 +1,6 @@
 export async function GET() {
   // The file path is relative to the public directory in Vercel
-  const resumePath = '/resume.pdf';
+  const resumePath = '/resume/resume.pdf';
 
   try {
     // Instead of reading the file, we'll redirect to its public URL
