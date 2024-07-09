@@ -1,26 +1,19 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-
 export async function GET() {
-  // Get the directory of the current module
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  
-  // Construct the path to your resume file
-  const resumePath = path.join(__dirname, './resume.pdf');
-  
+  // The file path is relative to the public directory in Vercel
+  const resumePath = '/resume.pdf';
+
   try {
-    const file = await fs.readFile(resumePath);
-    
-    return new Response(file, {
-      status: 200,
+    // Instead of reading the file, we'll redirect to its public URL
+    return new Response('', {
+      status: 302,
       headers: {
+        'Location': resumePath,
         'Content-Type': 'application/pdf',
         'Content-Disposition': 'attachment; filename="resume.pdf"'
       }
     });
   } catch (error) {
-    console.error('Error reading file:', error);
+    console.error('Error:', error);
     return new Response('File not found', { status: 404 });
   }
 }
