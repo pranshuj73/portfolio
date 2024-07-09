@@ -1,5 +1,9 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+import Header from '@/components/sections/Header.astro';
 import '@/styles/globals.css'
+
+const { active = "about" } = Astro.props;
 ---
 
 <!doctype html>
@@ -29,9 +33,14 @@ import '@/styles/globals.css'
 		<meta property="twitter:title" content="Pranshu Jha" />
 		<meta property="twitter:description" content="Full-Stack Developer Crafting Unique Digital Experiences." />
 		<meta property="twitter:image" content="/meta.jpg" />
+
+		<ViewTransitions />
 		
 	</head>
-	<body class="dark">
-		<slot />
+	<body class="dark p-4 sm:m-4 md:m-8 !mx-auto max-w-screen-lg" transition:animate="fade">
+		<Header active={active} />
+		<main class="text-gray-900 dark:text-gray-400 flex flex-col gap-8">
+			<slot />
+		</main>
 	</body>
 </html>

@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets';
+import pfp from '@/images/pfp.jpg';
+import { Separator } from "@/components/ui/separator";
+import Socials from "@/components/socials.astro";
+
+const { active = "about" } = Astro.props;
+
+const linkClasses = "hover:bg-accent/60 hover:text-accent-foreground rounded-md ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 p-1 px-2";
+const activeClasses = " bg-accent text-accent-foreground";
+---
+
+<section class="flex flex-wrap items-center gap-4 w-full mb-2">
+    <Image class="rounded-full h-20 w-20 border-white/50 border-2 border-dashed p-1" src={pfp} width="800" height="800" alt="Pranshu Jha" />
+    <div class="flex-1 min-w-[300px]">
+        <h1 class="text-2xl">Pranshu Jha</h1>
+        <p class="font-semibold">Full-Stack Developer Crafting Unique Digital Experiences.</p>
+    </div>
+    <Socials class="self-end hidden md:block" />
+</section>
+
+<Socials class="block md:hidden -mb-2" />
+
+<Separator className="my-4" />
+
+<nav class="flex gap-2 mb-4">
+    <a class={linkClasses + (active === "about" ? activeClasses : "")} href="/">About</a>
+    <a class={linkClasses + (active === "projects" ? activeClasses : "")} href="/projects">Projects</a>
+    <a class={linkClasses + (active === "stack" ? activeClasses : "")} href="/stack">Stack</a>
+    <a class={linkClasses + (active === "contact" ? activeClasses : "")} href="/contact">Contact</a>
+</nav>
+  

@@ -1,7 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
+import Experience from '@/components/sections/Experience.astro';
+import Education from '@/components/sections/Education.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	
+<Layout>
+
+<section class="flex flex-col gap-2">
+  <p>Full Stack Developer based in Chennai, IN, pursuing Bachelors in Computer Science.</p>
+  <p>Passionate about building innovative solutions that make a difference, with expertise in modern web technologies and frameworks.</p>
+</section>
+
+<!-- <p>Currently working on <a class="link">Matty</a></p> -->
+
+<Experience />
+  
+<Education />
+
 </Layout>
