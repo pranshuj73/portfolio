@@ -2,11 +2,9 @@
 import { Image } from 'astro:assets';
 import { Separator } from "@/components/ui/separator";
 import Socials from "@/components/socials.astro";
+import Navbar from './Navbar';
 
-const { active = "about" } = Astro.props;
-
-const linkClasses = "hover:bg-accent/60 hover:text-accent-foreground rounded-md ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 p-1 px-2";
-const activeClasses = " bg-accent text-accent-foreground";
+const { active } = Astro.props;
 ---
 
 <section class="flex flex-wrap items-center gap-4 w-full mb-2">
@@ -20,12 +18,6 @@ const activeClasses = " bg-accent text-accent-foreground";
 
 <Socials class="block md:hidden -mb-2" />
 
-<Separator className="my-4" />
+<Separator className="my-4 h-0.5 rounded-full" />
 
-<nav class="flex gap-2 mb-4">
-    <a class={linkClasses + (active === "about" ? activeClasses : "")} href="/">About</a>
-    <a class={linkClasses + (active === "projects" ? activeClasses : "")} href="/projects">Projects</a>
-    <a class={linkClasses + (active === "stack" ? activeClasses : "")} href="/stack">Stack</a>
-    <a class={linkClasses + (active === "contact" ? activeClasses : "")} href="/contact">Contact</a>
-</nav>
-  
+<Navbar activeTab={active} client:load transition:persist />

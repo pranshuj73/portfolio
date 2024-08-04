@@ -1,9 +1,11 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import Header from '@/components/sections/Header.astro';
+import Hi from '@/components/hi';
 import '@/styles/globals.css'
 
-const { active = "about" } = Astro.props;
+// ABOUT - 00
+const { active = 0 } = Astro.props;
 ---
 
 <!doctype html>
@@ -38,8 +40,9 @@ const { active = "about" } = Astro.props;
 		<ViewTransitions />
 		
 	</head>
-	<body class="dark px-4 pt-8 md:pt-0 pb-20 sm:m-4 md:m-8 !mx-auto max-w-screen-lg lg:pl-[calc((100vw-100%)/2)]" transition:animate="none">
-		<Header active={active} transition:animate="slide"/>
+	<body class="dark px-4 pt-8 md:pt-0 pb-20 sm:m-4 md:m-8 !mx-auto max-w-screen-lg lg:pl-[calc((100vw-100%)/2)]">
+		<Hi client:only="react" />
+		<Header active={active} />
 		<main class="text-gray-900 dark:text-gray-400 flex flex-col gap-8" transition:animate="fade">
 			<slot />
 		</main>
