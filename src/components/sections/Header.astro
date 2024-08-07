@@ -2,13 +2,10 @@
 import { Image } from 'astro:assets';
 import { Separator } from "@/components/ui/separator";
 import Socials from "@/components/socials.astro";
-import Navbar from './Navbar';
-
-const { active } = Astro.props;
 ---
 
 <section class="flex flex-wrap items-center gap-4 w-full mb-2">
-    <Image class="rounded-full h-20 w-20 border-white/50 border-2 border-dashed p-1" src={"/pfp.jpg"} width="800" height="800" alt="Pranshu Jha" />
+    <Image class="rounded-full h-20 w-20 border-white/50 border-2 border-dashed p-1" src={"/pfp.jpg"} width="800" height="800" loading={"eager"} alt="Pranshu Jha's PFP" />
     <div class="flex-1 min-w-[300px]">
         <h1 class="text-2xl">Pranshu Jha</h1>
         <p class="font-semibold">Full-Stack Developer Crafting Unique Digital Experiences.</p>
@@ -19,5 +16,3 @@ const { active } = Astro.props;
 <Socials class="block md:hidden -mb-2" />
 
 <Separator className="my-4 h-0.5 rounded-full" />
-
-<Navbar activeTab={active} client:load transition:persist />
