@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/PostLayout.astro
-title: I made a website to rickroll my friends
+title: Making a website to rickroll my friends
 description: One of my best pranks yet! I made a website that rickrolls you when you solve a puzzle.
 ---
 For a long time, I've wanted to use my skills for the greater good, like trolling my friends. Then I had a genius idea: 
