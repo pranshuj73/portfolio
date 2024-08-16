@@ -1,14 +1,17 @@
 ---
+import data from "@/data/education.json";
 ---
 <section>
-<h2 class="mb-2">Education:</h2>
-<ul class="flex flex-col gap-4 list-disc list-outside ml-4">
-  <li>
-    <h3>
-      Bachelors in Engineering (CSE) at
-      <a class="link" href="https://ritchennai.org" target="_blank" rel="noreferrer noopener">RIT</a>
-    </h3>
-    <p class="text-sm">2021 - Current • Chennai, IN</p>
-  </li>
-</ul>
+  <h2 class="mb-2">Education:</h2>
+  <ul class="flex flex-col gap-4 list-disc list-outside ml-4">
+    { data.education.map((edu) => (
+      <li>
+        <h3>
+          {edu.degree} at
+          <a class="link" href={edu.institution_url} target="_blank" rel="noreferrer noopener">{edu.institution}</a>
+        </h3>
+        <p class="text-sm">{edu.duration} • {edu.location}</p>
+      </li>
+    ))}
+  </ul>
 </section>

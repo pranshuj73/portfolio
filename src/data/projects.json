@@ -1,0 +1,30 @@
+{
+  "projects": [
+    {
+      "name": "Dystopian",
+      "url": "https://github.com/Razor-Code/dystopian",
+      "description": "Gamified learning platform that teaches programming through bite-sized lessons.",
+      "icon": "<polyline points=\"14.5 17.5 3 6 3 3 6 3 17.5 14.5\"/><line x1=\"13\" x2=\"19\" y1=\"19\" y2=\"13\"/><line x1=\"16\" x2=\"20\" y1=\"16\" y2=\"20\"/><line x1=\"19\" x2=\"21\" y1=\"21\" y2=\"19\"/><polyline points=\"14.5 6.5 18 3 21 3 21 6 17.5 9.5\"/><line x1=\"5\" x2=\"9\" y1=\"14\" y2=\"18\"/><line x1=\"7\" x2=\"4\" y1=\"17\" y2=\"20\"/><line x1=\"3\" x2=\"5\" y1=\"19\" y2=\"21\"/>"
+    },
+    {
+      "name": "XDC Health",
+      "url": "https://github.com/Razor-Code/xdc-health-revise",
+      "description": "Decentralized Electronic Healthcare Management System built upon the XDC Blockchain.",
+      "icon": "<path d=\"M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3\"/><path d=\"M8 15v1a6 6 0 0 0 6 6a6 6 0 0 0 6-6v-4\"/><circle cx=\"20\" cy=\"10\" r=\"2\"/>"
+    },
+    {
+      "name": "Oreweb",
+      "url": "https://oreweb.vercel.app/",
+      "description": "P2P anonymous file sharing platform built on NextJS and PeerJS.",
+      "icon": "<path d=\"M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2\"/><path d=\"m15.194 13.707 3.814 1.86-1.86 3.814\"/><path d=\"M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4\"/>"
+    },
+    {
+      "name": "Matty",
+      "url": "https://heymatty.vercel.app",
+      "description": "A virtual assistant that can help with scheduling events, setting reminders, and more.",
+      "icon": "<path d=\"M8 2v4\"/><path d=\"M16 2v4\"/><path d=\"M21 17V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11Z\"/><path d=\"M3 10h18\"/><path d=\"M15 22v-4a2 2 0 0 1 2-2h4\"/>"
+    }
+  ]
+
+  
+}

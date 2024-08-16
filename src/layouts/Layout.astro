@@ -46,7 +46,7 @@ const { active = 0 } = Astro.props;
 		<Hi client:only="react" />
 		<Header />
 		<Navbar activeTab={active} client:load transition:persist />
-		<main class="text-gray-900 dark:text-gray-400 flex flex-col gap-8" transition:animate="fade">
+		<main class="text-gray-900 dark:text-gray-400 flex flex-col gap-8 pl-3" transition:animate="fade">
 			<slot />
 		</main>
 	</body>

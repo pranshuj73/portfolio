@@ -15,10 +15,10 @@ const blog_posts = await Astro.glob('./posts/*.md');
 <Layout active={3}>
     <p>Welcome to my corner of the internet, where I share thoughts, project updates & everything else about my journey.</p>
     { blog_posts && blog_posts.map((post) => (
-        <Card className='-mb-4'>
+        <Card className='-mb-4 hover:bg-white/5 duration-150 ease-in-out'>
             <a href={post.url}>
                 <CardHeader className='px-4 py-3'>
-                    <CardTitle className='text-xl'>{post.frontmatter.title}</CardTitle>
+                    <CardTitle className='text-lg'>{post.frontmatter.title}</CardTitle>
                     <CardDescription>{post.frontmatter.description}</CardDescription>
                 </CardHeader>
             </a>

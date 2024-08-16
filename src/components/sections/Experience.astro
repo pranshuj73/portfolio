@@ -1,20 +1,17 @@
+---
+import data from "@/data/experience.json";
+---
 <section>
 <h2 class="mb-2">Experience:</h2>
 <ul class="flex flex-col gap-4 list-disc list-outside ml-4">
-  <li>
-    <h3>
-      Software Engineer Intern at
-      <a class="link" href="https://finequs.com/" target="_blank" rel="noreferrer noopener">Finequs</a>
-    </h3>
-    <p class="text-sm">2024 - 2024 • Chennai, IN</p>
-  </li>
-  
-  <li>
-    <h3>
-      Intern Full-Stack Developer at
-      <a class="link" href="https://rookhq.com/" target="_blank" rel="noreferrer noopener">Rook</a>
-    </h3>
-    <p class="text-sm">2021 - 2022 • Chennai, IN</p>
-  </li>
+  { data.experience.map((exp) => (
+    <li>
+      <h3>
+        {exp.title} at
+        <a class="link" href={exp.company_url} target="_blank" rel="noreferrer noopener">{exp.company}</a>
+      </h3>
+      <p class="text-sm">{exp.duration} • {exp.location}</p>
+    </li>
+  )) }
 </ul>
 </section>

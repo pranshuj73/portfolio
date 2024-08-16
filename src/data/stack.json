@@ -1,0 +1,26 @@
+{
+  "stack": {
+    "Frontend": [
+      "Next.js",
+      "React",
+      "Vanilla / Tailwind CSS",
+      "HTML"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express.js",
+      "SQL / NoSQL"
+    ],
+    "Languages": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Java"
+    ],
+    "Tools": [
+      "Linux",
+      "Android Studio",
+      "Git / GitHub"
+    ]
+  }
+}

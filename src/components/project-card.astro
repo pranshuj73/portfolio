@@ -1,12 +1,9 @@
 ---
-const {name, description, url} = Astro.props;
+const {name, description, url, icon} = Astro.props;
 ---
 
 <a href={url} class="relative hover:-mt-2 hover:pb-2 transition-all duration-200 ease-out" target="_blank" rel="noreferrer noopener">
-    <svg class="project-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <!-- <div class="mesh-gradient" /> -->
-        <slot />
-    </svg>
+    <svg class="project-icon" set:html={icon} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     <p class="text-white mb-1">{name}</p>
     <p class="text-sm">{description}</p>
 </a>

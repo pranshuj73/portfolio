@@ -1,0 +1,19 @@
+{
+    "experience": [
+      {
+        "title": "Software Engineer Intern",
+        "company": "Finequs",
+        "company_url": "https://finequs.com/",
+        "duration": "2024",
+        "location": "Chennai, IN"
+      },
+      {
+        "title": "Intern Full-Stack Developer",
+        "company": "Rook",
+        "company_url": "https://rookhq.com/",
+        "duration": "2021 - 2022",
+        "location": "Chennai, IN"
+      }
+    ]
+}
+  
